@@ -108,7 +108,7 @@
             </table>
         </div>
 
-    
+
         <!-- <div class="creativity" id="creativity">
             <div class="creativity-wrapper">
                 <div class="mini-1">
@@ -144,20 +144,23 @@
 
 
 
-
         <div class="creativity" id="creativity">
-    <div class="creativity-wrapper">
-        @foreach($trainers as $key => $item)
-        <div class="mini-one">
-            <img src="{{ $item->profile_picture }}" alt="Background Image" width="100" height="100">
-            <div class="mini-content">
-                <h2>{{ $item->name }}</h2>
-                <p>{{ $item->bio }}</p>
+            <div class="creativity-wrapper">
+                @foreach($trainers as $key => $item)
+                <div class="mini-one">
+                <img src="{{ $item->profile_picture }}" alt="Background Image" width="100" height="100">
+
+                    <div class="mini-content">
+                        <h2>{{ $item->name }}</h2>
+                        <p>{{ $item->bio }}</p>
+                        
+                    </div>
+                </div>
+                
+                @endforeach
             </div>
         </div>
-        @endforeach
-    </div>
-</div>
+
 
 
 
