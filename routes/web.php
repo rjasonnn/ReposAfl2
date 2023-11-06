@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TrainerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', function() {
-    return view('home');
-});
+
+Route::get('/home', [TrainerController::class, 'index']);
