@@ -1,0 +1,682 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #fb590e;
+    border-radius: 1rem;
+    height: 5rem;
+}
+
+::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 10px;
+}
+
+::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+*::selection {
+    color: #FFF8F0;
+    background: #FF8811;
+}
+
+body {
+    color: #392F5A;
+    background-color: #FFF8F0;
+    background: rgb(255,186,119);
+    background: linear-gradient(242deg, rgba(255,186,119,1) 0%, rgba(255,229,229,1) 33%);
+    padding-top: 10px;
+}
+
+ol,ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #FF8811;
+}
+
+.page-wrapper {
+    overflow: auto;
+    width: 100%;
+}
+
+nav a:active {
+    background-color: #FF8811;
+    color: #FFF8F0;
+    border-radius: 15px;
+    padding: 6px;
+}
+
+/* navbar */
+nav {
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    heigth: 20px;
+}
+
+nav .nav-logo-title a {
+    min-width: 200px;
+    font-size:23px;
+    font-weight: 700;
+    heigth: 30px;
+    color: #fb590e;
+}
+
+nav .nav-logo-title img {
+    opacity:0;
+}
+
+nav .nav-logo-title:before{
+    content: "";
+    display:block;
+    background: url(https://seeklogo.com/images/A/arnold-gym-logo-99512F9652-seeklogo.com.png) no-repeat;
+    background-size: 100% 100%;
+    width:100%;
+}
+
+.nav-logo-title {
+    opacity: 0;
+    display: flex;
+    animation: slideRight 2s ease forwards;
+}
+
+nav ul {
+    display: flex;
+    gap: 16px;
+    font-weight: 500;
+    animation: slideLeft 3s ease forwards;
+}
+/* end navbar */
+
+/* home header */
+#header {
+    padding: 0 40px;
+    position: relative;
+    width: 100%;
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slideUp 3s ease forwards;
+}
+
+.header-texts {
+    max-width: 600px;
+}
+
+.header-texts h1 {
+    font-size: 50px;
+}
+
+.header-texts h3 {
+    color: #4059ad;
+}
+
+.header-filler{
+    width: 400px;
+    height: 400px;
+}
+
+.header-filler{
+    content: "";
+    display:block;
+    background: url(https://seeklogo.com/images/A/arnold-gym-logo-99512F9652-seeklogo.com.png) no-repeat;
+    background-size: 100% 100%;
+}
+/* end header */
+
+/* content */
+.content-aside{
+    padding: 0 40px;
+    animation: slideUp 3s ease forwards;
+}
+
+.content {
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    border-radius: 20px;
+    /* background-color: #f4d06f; */
+    background: rgb(255,136,17);
+    background: linear-gradient(242deg, rgba(255,136,17,1) 17%, rgba(244,208,111,1) 100%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    padding: 20px; 
+    animation: slideUp 3s ease forwards;
+    gap: 2rem;
+}
+
+.content-first, .content-second {
+    overflow: auto;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.content-first h2, .content-second h2{
+    margin-bottom: 20px;
+}
+
+.content-first p, .content-second p{
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+/* content resource */
+aside {
+    margin: 50px auto;
+}
+
+aside h2 {
+    display: flex;
+    justify-content:center;
+    margin: 20px
+}
+
+aside ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+aside ul li{
+    border: 2px solid #FF8811;
+    border-radius: 30px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+aside ul li a{
+    color: #FF8811;
+}
+
+aside ul li:hover{
+    background-color: #FF8811;
+    
+    & a {
+        color:white;
+    }
+}
+
+/* end content resource */
+
+/* article */
+.articles {
+    padding: 0 40px;
+    animation: slideUp 3s ease forwards;
+    overflow-x: auto;
+
+}
+
+table {
+    border-spacing:20px 20px;
+}
+table td, table td * {
+    vertical-align: top;
+}
+
+.article {
+    border-radius: 20px;
+    background: #fff;
+    padding: 20px;
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.article:hover{
+    transform: translateY(-10px);
+}
+
+.article p {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: gray;
+}
+
+.article a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #FF8811;
+}
+
+.article img{
+    opacity: 0;
+    margin-bottom: 10px;
+}
+
+.article::before {
+    content: "";
+    display:block;
+    background: url(https://techaffinity.com/blog/wp-content/uploads/2020/12/Future-of-CSS-in-2021.jpg) no-repeat;
+    background-size: 100% 100%;
+    width:100%;
+    height:180px;
+}
+
+.row-second tr {
+    overflow: hidden;
+    height: 14px;
+    white-space: nowrap;
+}
+
+.row-second td {
+    border-radius: 20px;
+    background: #fff;
+    padding: 20px;
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.row-second img{
+    opacity:0;
+}
+
+.row-second td:nth-child(2) {
+    content: "";
+    display:block;
+    background: url(https://th.bing.com/th/id/R.5fe0e638c453179158345d37afd558d7?rik=OLhGapcOXyRVkA&riu=http%3a%2f%2fwww.miraclestudios.in%2fblog%2fwp-content%2fuploads%2f2014%2f05%2fjavascript-vs-css11.jpg&ehk=t%2fW%2bwNP2nAUCF4y4P2TaKt9HwhhN59jOpCCXfmwCDIc%3d&risl=&pid=ImgRaw&r=0) no-repeat;
+    background-size: 100% 100%;
+    height:210px;
+}
+/* end article */
+
+/* creativity */
+#creativity{
+    margin: 40px 40px;
+    animation: slideUp 3s ease forwards;
+}
+
+.creativity {
+    padding: 10px 0px;
+}
+
+.creativity img{
+    opacity:0;
+}
+
+.creativity-wrapper{
+    margin: 50px 0;
+    background: #fff7f7;
+    border-radius: 20px;
+    padding: 10px;
+    height: auto;
+    width: auto;
+    display:flex;
+    justify-content:center;
+    box-shadow: 0 5px 15px rgba(255, 99, 97,100);
+}
+
+.creativity-wrapper .mini-one,.mini-two,.mini-three,.mini-four{
+    background: rgb(255,133,0);
+    background: linear-gradient(29deg, rgba(255,133,0,1) 29%, rgba(255,205,121,1) 100%);
+    position: relative;
+    color: white;
+    padding: 20px 20px;
+    border-radius: 20px;
+    height: auto;
+    width: 270px;
+    transition: 0.6s ease-in-out;
+    margin: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.creativity-wrapper .mini-content p{
+    position: relative;
+    margin-top: -130px;
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    transition: 0.6s ease-in-out;
+}
+
+.creativity-wrapper .mini-one:hover,.mini-two:hover,.mini-three:hover,.mini-four:hover{
+    height: 400px;
+    width: 100%;
+    overflow: auto;
+
+    & .mini-content p{
+        visibility: visible;
+        opacity: 1;
+        margin-top: 10px;
+        display: flex;
+        transition-delay: 1s;
+    }
+}
+
+.mini-one::before{
+    content: "";
+    display:block;
+    margin: 0 auto;
+    height:100px;
+    width:100px;
+    background: url(https://th.bing.com/th/id/R.687b879ac06191bc23674b681e9f1a42?rik=gZVRmRoxBmGsKg&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_554608.png&ehk=gQiK6e4GmNvJB5EvVxEYKUkqAM%2bUrpHevXcsGOLLA3k%3d&risl=&pid=ImgRaw&r=0);
+    background-size: 100% 100%;
+    filter: invert(100%) sepia(0%) saturate(3724%) hue-rotate(268deg) brightness(115%) contrast(101%);
+}
+
+.mini-two::before{
+    content: "";
+    display:block;
+    margin: 0 auto;
+    height:100px;
+    width:100px;
+    background: url(https://cdn0.iconfinder.com/data/icons/business-element-3/48/29-Potential_of_business-512.png);
+    background-size: 100% 100%;
+    filter: invert(100%) sepia(0%) saturate(3724%) hue-rotate(268deg) brightness(115%) contrast(101%);
+}
+
+.mini-three:before{
+    content: "";
+    display:block;
+    margin: 0 auto;
+    background-size: 100% 100%;
+    height:100px;
+    width:100px;
+    background: url(https://www.jing.fm/clipimg/full/42-421222_png-file-svg-problem-solving-icon.png);
+    background-size: 100% 100%;
+    filter: invert(100%) sepia(0%) saturate(3724%) hue-rotate(268deg) brightness(115%) contrast(101%);
+}
+.mini-four:before{
+    content: "";
+    display:block;
+    margin: 0 auto;
+    background-size: 100% 100%;
+    height:100px;
+    width:100px;
+    background: url(https://icon-library.com/images/idea_head-512.png);
+    background-size: 100% 100%;
+    filter: invert(100%) sepia(0%) saturate(3724%) hue-rotate(268deg) brightness(115%) contrast(101%);
+}
+/* end creativity */
+
+/* footer */
+footer {
+    margin-top: 50px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.footer-logo{
+    padding: 0 40px;
+    flex: 40%;
+    animation: slideRight 3s ease forwards;
+}
+
+.footer-form{
+    padding: 0 40px;
+    flex: 60%;
+    animation: slideLeft 3s ease forwards;
+}
+
+.footer-form input[type=text]{
+    width:100%;
+    height: 40px;
+    border-radius: 0px;
+	border:1px solid #ffdfab;
+    padding: 10px;
+    outline: none;
+    margin: 10px 0;
+}
+
+.footer-form label{
+    font-weight: 500;
+}
+
+.footer-form p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer-form #gender {
+    width:100%;
+    height: 40px;
+    border-radius: 0px;
+	border:1px solid #ffdfab;
+    outline: none;
+    margin: 10px 0;
+}
+
+.footer-form input[type=radio] {
+    margin: 10px 0;
+}
+
+.footer-form button {
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid #FF8811;
+    height: auto;
+    font-size: 15px;
+    font-weight: 700;
+    color: #FF8811;
+    background: transparent;
+    padding: 6px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.footer-form button:hover{
+    background: #FF8811;
+    color: white;
+}
+
+.footer-form button:focus{
+    background: #e77300;
+}
+
+.footer-credit{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top: 50px;
+    width:100%;
+    background: #fb590e;;
+    color: #FFF8F0;
+    padding: 0px 30px;
+    height: 80px;
+}
+
+.footer-credit h3:first-child{
+    font-weight: 500;
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+.footer-credit h3:last-child{
+    font-size: 10px;
+    margin-right: 10px;
+}
+/* end footer */
+
+/* keyframe */
+@keyframes slideRight {
+    0% {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity:1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(60px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity:1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(60px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity:1;
+    }
+}
+/* end keyframe */
+
+@media only screen and (max-width: 600px) {
+    /* For tablets: */
+    nav .nav-logo-title:before{
+        display: none;
+    }
+
+    nav img{
+        display:none;
+    }
+
+    nav {
+        justify-content: center;
+        display: grid;
+    }
+
+    nav .nav-logo-title {
+        justify-content:center;
+    }
+
+    .header-filler {
+        display:none;
+    }
+
+    .content {
+        flex-wrap: wrap;
+    }
+
+    .content-first,.content-second {
+        height: 45%;
+    }
+
+    aside ul{
+        flex-wrap: wrap;
+    }
+
+    table tr {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+
+    table tr td{
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .creativity-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .creativity-wrapper .mini-one,.mini-two,.mini-three,.mini-four {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    .nav-logo-title:before{
+        display: none;
+    }
+
+    nav img{
+        display:none;
+    }
+
+    .header-texts{
+        width: 50%;
+    }
+    .header-filler {
+        margin-left: 10px;
+        width: 40%;
+        height: 250px;
+    }
+
+    table tr {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+
+    table tr td{
+        margin: 20px 0;
+        width: 100%;
+    }
+    
+    .creativity-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .creativity-wrapper .mini-one,.mini-two,.mini-three,.mini-four {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .nav-logo-title:before{
+        display: block;
+    }
+     nav img{
+        display:block;
+    }
+
+     .header-texts{
+        width: 600px;
+    }
+    .header-filler {
+        height: 400px;
+        width: 400px;
+    }
+
+    .creativity-wrapper {
+        flex-wrap: nowrap;
+    }
+
+    .creativity-wrapper .mini-one,.mini-two,.mini-three,.mini-four {
+        width: 270px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .creativity-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .creativity-wrapper .mini-one,.mini-two,.mini-three,.mini-four {
+        width: 100%;
+    }
+}
