@@ -25,7 +25,7 @@
             <section id="header">
                 <div class="header-texts">
                     <h1>Arnold Gym</h1>
-                    <h3>Perjalanan gym yang terjangkau dimulai sekarang!</h3>
+                    <h3>Perjalanan gym yang terjangkau dimulai sekarang!!</h3>
                     <p>Akses tak terbatas ke puluhan gym premium & variasi kelas gratis setiap harinya. Hanya di Arnold Gym!!</p>
                 </div>
                 <div class="header-filler">
