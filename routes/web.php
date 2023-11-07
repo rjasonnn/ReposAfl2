@@ -20,3 +20,7 @@ Route::get('/', function () {
 
 
 Route::get('/home', [TrainerController::class, 'index']);
+
+Route::get('/trainerdetail/{id}', [TrainerController::class, 'showById']);
+
+Route::get('/trainers', [TrainerController::class, 'indexAll']);

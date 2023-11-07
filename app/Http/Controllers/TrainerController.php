@@ -17,6 +17,12 @@ class TrainerController extends Controller
         return view('home', compact('trainers'));
     }
 
+    public function indexAll()
+    {
+        $trainers = Trainer::getAll();
+        return view('trainers', compact('trainers'));
+    }
+
     /**
      * Show the form for creating a new resource.
      */
@@ -39,6 +45,17 @@ class TrainerController extends Controller
     public function show(Trainer $trainer)
     {
         //
+    }
+
+    public function showById($id)
+    {
+        $trainer = Trainer::find($id);
+
+        if ($trainer) {
+            return view('trainerdetail', compact('trainer'));
+        } else {
+            return abort(404);
+        }
     }
 
     /**
