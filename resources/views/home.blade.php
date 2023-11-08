@@ -68,119 +68,113 @@
             </ul>
         </aside>
     </div>
-    <div class="articles" id="articles">
-        <table>
-            <tr class="row-first">
-                <td class="article">
-                    <img alt="Article 1">
-                    <h3>The Future of CSS: Trends and Predictions</h3>
-                    <p>As technology continues to evolve, so too does the world of web design. CSS is no exception, with
-                        advancements being made all the time to enhance the user experience of websites. In this article, we
-                        will explore the latest trends and predictions for the future of CSS and what it means for web
-                        developers and designers.</p>
-                    <a href="#">See More</a>
-                </td>
-                <td class="article">
-                    <img alt="Article 2">
-                    <h3>The Benefits of CSS for Web Developers</h3>
-                    <p>CSS preprocessors, such as Sass and Less, have become increasingly popular among web developers. They
-                        offer a range of benefits, including simpler code organization, increased efficiency, and easier
-                        maintenance of CSS files. In this article, we will explore the advantages of using CSS preprocessors
-                        and how they can benefit your web development workflow.</p>
-                    <a href="#">See More</a>
-                </td>
-                <td class="article">
-                    <img alt="Article 3">
-                    <h3>The Role of CSS in Accessibility and Inclusitivity</h3>
-                    <p>Web accessibility is becoming an increasingly important consideration for web designers and
-                        developers. CSS plays a crucial role in ensuring that websites are accessible to all users,
-                        including those with disabilities. In this article, we will explore the role of CSS in creating
-                        accessible and inclusive web designs and the best practices for implementing them.</p>
-                    <a href="#">See More</a>
-                </td>
-            </tr>
-            <tr class="row-second">
-                <td class="article-long" colspan="2">
-                    <h3>CSS vs. JavaScript: Which One Should You Use for Animation?</h3>
-                    <p>CSS and JavaScript are both powerful tools for creating animation effects on websites. While CSS is
-                        often used for simple animations, JavaScript offers more advanced functionality and control over
-                        animations. In this article, we will explore the differences between CSS and JavaScript animation
-                        effects and help you decide which one is best suited for your web development needs. We will also
-                        provide examples and tips for using each tool effectively.</p>
-                </td>
-                <td>
-                    <img alt="Article 4">
-                </td>
-            </tr>
-        </table>
+
+    <div class="container text-center articles">
+        <div class="row gx-5">
+            @foreach ($challenges as $challenge)
+                <div class="article col m-4">
+                    <img src="{{ $challenge->image }}" alt="{{ $challenge->judul }}">
+                    <h3>{{ $challenge->judul }}</h3>
+                    <p>{{ $challenge->deskripsi }}</p>
+                    <a href="challengedetail/{{$challenge->id}}">Read More</a>
+                </div>
+            @endforeach
+        </div>
+    </div>
+
+
+    <div class="row articles">
+        <div class="article col m-4" colspan="2">
+            <h3>CSS vs. JavaScript: Which One Should You Use for Animation?</h3>
+            <p>CSS and JavaScript are both powerful tools for creating animation effects on websites. While CSS is
+                often used for simple animations, JavaScript offers more advanced functionality and control over
+                animations. In this article, we will explore the differences between CSS and JavaScript animation
+                effects and help you decide which one is best suited for your web development needs. We will also
+                provide examples and tips for using each tool effectively.</p>
+        </div>
+        <div class="col-4 m-4 article">
+            <img alt="Article 4">
+        </div>
     </div>
 
 
 
+    <style>
+        .mini-one {
+            text-align: center;
+        }
+
+        .mini-one img {
+            border-radius: 20%;
+        }
+
+        .mini-content {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: left;
+        }
+
+    .image-div {
+        width: 100px;
+        padding-bottom: 8px;
+        background: black;
+    }
+
+    .image-div img {
+        object-fit: cover;
+        width: 150px;
+        height: 150px;
+        
+    }
+        
+    </style>
+
+    
 
     <div class="creativity" id="creativity">
         <div class="creativity-wrapper">
             @php
                 $counter = 0;
             @endphp
-    
+
             @foreach ($trainers as $key => $item)
                 @if ($counter < 4)
-                    <div class="mini-one">
-                        <a href="trainerdetail/{{ $item->id }}">
-                            <img src="{{ $item->profile_picture }}" alt="Background Image" width="100" height="100">
-                        </a>
-    
+                    <div class="mini-one image-div">
+                        <div>
+                            <a class="" href="trainerdetail/{{ $item->id }}" class="p-2">
+                                <img src="{{ $item->profile_picture }}" alt="Background Image">
+                            </a>
+                        </div>
+                        
+
+                        <h2>{{ $item->name }}</h2>
+
                         <div class="mini-content">
-                            <h2>{{ $item->name }}</h2>
+                            
                             <p>{{ $item->bio }}</p>
                         </div>
                     </div>
-    
+
                     @php
                         $counter++;
                     @endphp
                 @else
-                    @break
-                @endif
-            @endforeach
-        </div>
+                @break
+            @endif
+        @endforeach
     </div>
-    
+</div>
 
 
 
 
 
-    <footer>
-        <div class="footer-logo">
-            <h3>CSS Template</h3>
-            <p>Showcasing the talent and abilites of students.</p>
-        </div>
-        <div class="footer-form">
-            <p>Registration Form</p>
-            <form action="">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="gender">Gender:</label><br>
-                <select name="gender" id="gender">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="null">Prefer Not to Answer</option>
-                </select>
-                <p>Please select your favorite Web language:</p>
-                <input type="radio" id="html" name="fav_language" value="HTML">
-                <label for="html">HTML</label><br>
-                <input type="radio" id="css" name="fav_language" value="CSS">
-                <label for="css">CSS</label><br>
-                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-                <label for="javascript">JavaScript</label><br>
-                <button>Submit</button>
-            </form>
-        </div>
-        <div class="footer-credit">
-            <h3>Template Made by Nicholas Christian Irawan</h3>
-            <h3>Copyright @ 2023 NCI</h3>
-        </div>
-    </footer>
+
+<footer>
+
+    <div class="footer-credit">
+        <h3>Template Made by Nicholas Christian Irawan</h3>
+        <h3>Copyright @ 2023 NCI</h3>
+    </div>
+</footer>
 @endsection

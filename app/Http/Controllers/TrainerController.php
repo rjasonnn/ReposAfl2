@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Trainer;
 use App\Http\Requests\StoreTrainerRequest;
 use App\Http\Requests\UpdateTrainerRequest;
+use App\Models\Challenge;
 
 class TrainerController extends Controller
 {
@@ -13,13 +14,16 @@ class TrainerController extends Controller
      */
     public function index()
     {
-        $trainers = Trainer::getAll();
-        return view('home', compact('trainers'));
+        $trainers = Trainer::all();
+        $challenges = Challenge::limit(3)->get();
+    
+        return view('home', compact('trainers', 'challenges'));
     }
+    
 
     public function indexAll()
     {
-        $trainers = Trainer::getAll();
+        $trainers = Trainer::all();
         return view('trainers', compact('trainers'));
     }
 

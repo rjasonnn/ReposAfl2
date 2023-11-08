@@ -1,6 +1,17 @@
 @extends('layouts.template')
 
 @section('content')
+
+<style>
+
+.divgambar{
+    min-width: 100px;
+}
+
+.divgambar img {
+    object-fit: cover
+}
+</style>
     <div class="mt-5">
         <table class="table table-striped">
             <thead>
@@ -14,9 +25,13 @@
                 @foreach ($trainers as $key => $trainer)
                     <tr>
                         <th scope="row">{{ $key + 1 }}</th>
-                        <td><a href="trainerdetail/{{ $trainer->id }}">
-                                <img src="{{ $trainer->profile_picture }}" alt="Background Image" width="100" height="100">
-                            </a></td>
+                        <td>
+                            <div class="divgambar">
+                                <a href="trainerdetail/{{ $trainer->id }}">
+                                    <img src="{{ $trainer->profile_picture }}" alt="Background Image" width="120" height="120">
+                                </a></td>
+                            </div>
+                           
                         <td>{{ $trainer->name }}</td>
                     </tr>
                 @endforeach

@@ -11,7 +11,7 @@ class Trainer extends Model
 
     protected $fillable = ['name', 'age', 'bio', 'profile_picture'];
 
-    public static function getAll()
+    public function getAll()
     {
         return self::all();
     }
