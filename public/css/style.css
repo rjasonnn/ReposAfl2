@@ -232,7 +232,6 @@ aside ul li:hover{
 .articles {
     padding: 0 40px;
     animation: slideUp 3s ease forwards;
-    overflow-x: auto;
 
 }
 
@@ -268,18 +267,12 @@ table td, table td * {
 }
 
 .article img{
-    opacity: 0;
     margin-bottom: 10px;
+    width: 250px;
+
 }
 
-.article::before {
-    content: "";
-    display:block;
-    background: url(https://techaffinity.com/blog/wp-content/uploads/2020/12/Future-of-CSS-in-2021.jpg) no-repeat;
-    background-size: 100% 100%;
-    width:100%;
-    height:180px;
-}
+
 
 .row-second tr {
     overflow: hidden;
@@ -318,9 +311,7 @@ table td, table td * {
     padding: 10px 0px;
 }
 
-.creativity img{
-    opacity:0;
-}
+
 
 .creativity-wrapper{
     margin: 50px 0;
@@ -343,7 +334,7 @@ table td, table td * {
     border-radius: 20px;
     height: auto;
     width: 270px;
-    transition: 0.6s ease-in-out;
+    transition: 1s ease-in-out;
     margin: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
 }
@@ -367,17 +358,16 @@ table td, table td * {
         opacity: 1;
         margin-top: 10px;
         display: flex;
-        transition-delay: 1s;
+        transition-delay: 0.7s ease-in-out;
     }
 }
 
-.mini-one::before{
+/* .mini-one::before{
     content: "";
     display:block;
     margin: 0 auto;
     height:100px;
     width:100px;
-    background: url(https://th.bing.com/th/id/R.687b879ac06191bc23674b681e9f1a42?rik=gZVRmRoxBmGsKg&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_554608.png&ehk=gQiK6e4GmNvJB5EvVxEYKUkqAM%2bUrpHevXcsGOLLA3k%3d&risl=&pid=ImgRaw&r=0);
     background-size: 100% 100%;
     filter: invert(100%) sepia(0%) saturate(3724%) hue-rotate(268deg) brightness(115%) contrast(101%);
 }
@@ -388,33 +378,31 @@ table td, table td * {
     margin: 0 auto;
     height:100px;
     width:100px;
-    background: url(https://cdn0.iconfinder.com/data/icons/business-element-3/48/29-Potential_of_business-512.png);
     background-size: 100% 100%;
     filter: invert(100%) sepia(0%) saturate(3724%) hue-rotate(268deg) brightness(115%) contrast(101%);
 }
 
-.mini-three:before{
+.mini-three::before{
     content: "";
     display:block;
     margin: 0 auto;
     background-size: 100% 100%;
     height:100px;
     width:100px;
-    background: url(https://www.jing.fm/clipimg/full/42-421222_png-file-svg-problem-solving-icon.png);
     background-size: 100% 100%;
     filter: invert(100%) sepia(0%) saturate(3724%) hue-rotate(268deg) brightness(115%) contrast(101%);
 }
-.mini-four:before{
+.mini-four::before{
     content: "";
     display:block;
     margin: 0 auto;
     background-size: 100% 100%;
     height:100px;
     width:100px;
-    background: url(https://icon-library.com/images/idea_head-512.png);
     background-size: 100% 100%;
     filter: invert(100%) sepia(0%) saturate(3724%) hue-rotate(268deg) brightness(115%) contrast(101%);
-}
+} */
+
 /* end creativity */
 
 /* footer */
@@ -605,6 +593,11 @@ footer {
 
     .creativity-wrapper .mini-one,.mini-two,.mini-three,.mini-four {
         width: 100%;
+        
+    }
+
+    .mini-one {
+        align-items: center;
     }
 }
 
@@ -680,3 +673,4 @@ footer {
         width: 100%;
     }
 }
+
