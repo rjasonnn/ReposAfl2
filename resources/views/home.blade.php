@@ -50,7 +50,7 @@
             </div>
         </div>
         <aside>
-            <h2>Resources</h2>
+            <h2>Contact Us</h2>
             <ul>
                 <li><a href="https://www.w3schools.com/w3css/defaulT.asp">W3Schools</a></li>
                 <li><a href="https://www.sololearn.com/learn/courses/css-introduction">SoloLearn</a></li>
@@ -59,13 +59,7 @@
                 </li>
                 <li><a href="https://www.udemy.com/topic/css/">Udemy</a></li>
             </ul>
-            <h2>Other Works</h2>
-            <ul>
-                <li><a href="">Website 1</a></li>
-                <li><a href="">Website 2</a></li>
-                <li><a href="">Website 3</a></li>
-                <li><a href="">Website 4</a></li>
-            </ul>
+           
         </aside>
     </div>
 
@@ -129,10 +123,16 @@
         
     </style>
 
+
+
     
 
     <div class="creativity" id="creativity">
+
+        <h2 style="margin: 0px 45px">Our Trainers</h3>
+
         <div class="creativity-wrapper">
+
             @php
                 $counter = 0;
             @endphp
@@ -147,7 +147,7 @@
                         </div>
                         
 
-                        <h2>{{ $item->name }}</h2>
+                        <h2 style="color: black">{{ $item->name }}</h2>
 
                         <div class="mini-content">
                             
@@ -173,8 +173,8 @@
 <footer>
 
     <div class="footer-credit">
-        <h3>Template Made by Nicholas Christian Irawan</h3>
-        <h3>Copyright @ 2023 NCI</h3>
+        <h3>Arnold Gym</h3>
+        <h3>By Reyhan and Steven</h3>
     </div>
 </footer>
 @endsection
