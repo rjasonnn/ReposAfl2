@@ -12,7 +12,6 @@ class Challenge extends Model
     protected $fillable = [
         'image',
         'judul',
-        'deskripsi',
-        'isi',
+        'deskripsi'
     ];
 }

@@ -52,12 +52,12 @@
         <aside>
             <h2>Contact Us</h2>
             <ul>
-                <li><a href="https://www.w3schools.com/w3css/defaulT.asp">W3Schools</a></li>
-                <li><a href="https://www.sololearn.com/learn/courses/css-introduction">SoloLearn</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">WhatsApp</a></li>
                 <li><a
-                        href="https://www.codecademy.com/catalog/language/html-css?g_network=g&g_productchannel=&g_adid=528849219307&g_locinterest=&g_keyword=codecademy%20css&g_acctid=243-039-7011&g_adtype=&g_keywordid=kwd-319752155745&g_ifcreative=&g_campaign=account&g_locphysical=1007715&g_adgroupid=128133970468&g_productid=&g_source={sourceid}&g_merchantid=&g_placement=&g_partition=&g_campaignid=1726903838&g_ifproduct=&g_adtype=search&g_acctid=243-039-7011">Codecademy</a>
+                        href="">Line</a>
                 </li>
-                <li><a href="https://www.udemy.com/topic/css/">Udemy</a></li>
+                <li><a href="">Telegram</a></li>
             </ul>
            
         </aside>
@@ -68,9 +68,8 @@
             @foreach ($challenges as $challenge)
                 <div class="article col m-4">
                     <img src="{{ $challenge->image }}" alt="{{ $challenge->judul }}">
-                    <h3>{{ $challenge->judul }}</h3>
+                    <h3>{{ $challenge->judul }} Challenge</h3>
                     <p>{{ $challenge->deskripsi }}</p>
-                    <a href="challengedetail/{{$challenge->id}}">Read More</a>
                 </div>
             @endforeach
         </div>
@@ -79,15 +78,13 @@
 
     <div class="row articles">
         <div class="article col m-4" colspan="2">
-            <h3>CSS vs. JavaScript: Which One Should You Use for Animation?</h3>
-            <p>CSS and JavaScript are both powerful tools for creating animation effects on websites. While CSS is
-                often used for simple animations, JavaScript offers more advanced functionality and control over
-                animations. In this article, we will explore the differences between CSS and JavaScript animation
-                effects and help you decide which one is best suited for your web development needs. We will also
-                provide examples and tips for using each tool effectively.</p>
+            <h3>Challenge Yourself: Discover a Variety of Challenges at Our Gym </h3>
+            <p>Di gym kami, Anda akan menemukan beragam tantangan yang dapat diikuti untuk membantu Anda mencapai tujuan kebugaran dan kesehatan pribadi Anda. Mulai dari kompetisi angkat beban, lari maraton, hingga kelas-kelas olahraga khusus yang dirancang untuk meningkatkan kekuatan, daya tahan, dan keseimbangan Anda. Tantangan-tantangan ini tidak hanya memberi Anda kesempatan untuk mengukur kemajuan Anda, tetapi juga memotivasi Anda untuk terus meningkatkan diri, menjadikan gym kami tempat yang ideal untuk mengembangkan potensi kebugaran Anda. Jadi, bersiaplah untuk menghadapi berbagai tantangan seru dan menjadi versi terbaik dari diri Anda di gym kami!</p>
         </div>
-        <div class="col-4 m-4 article">
-            <img alt="Article 4">
+        
+        <div class="col-4 m-4 article" style="background: url(https://img.freepik.com/premium-vector/people-doing-gym-exercise-with-instructor_18660-558.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1698969600&semt=ais); background-repeat:no-repeat; background-size:cover;">
+            
+            <a href="challenges" class="p-3">View More</a>
         </div>
     </div>
 
@@ -129,7 +126,7 @@
 
     <div class="creativity" id="creativity">
 
-        <h2 style="margin: 0px 45px">Our Trainers</h3>
+        <h2 style="margin: -15px 45px">Our Trainers</h3>
 
         <div class="creativity-wrapper">
 

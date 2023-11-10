@@ -22,12 +22,15 @@
 <div class="container d-flex flex-wrap justify-content-evenly creativity mt-5" id="creativity">
 @foreach ($trainers as $trainer )
 
-<div class="card mb-4" style="max-width: 640px;">
+<div class="article mb-4 p-3" style="width: 440px;">
     <div class="row">
       <div class="col">
-        <img src="{{$trainer->profile_picture}}"  alt="..." style="width: 100%; max-width: 100px; height: 100px; border-radius: 50%; margin: 0 auto;">
+        <a href="trainerdetail/{{$trainer->id}}">
+          <img src="{{$trainer->profile_picture}}"  alt="..." style="width: 100%; max-width: 150px; height: 150px; border-radius: 50%; margin: 0 auto;">
+
+        </a>
       </div>
-      <div class="col">
+      <div class="col m-4">
         <div class="card-body">
           <h5 class="card-title">{{$trainer->name}}</h5>
           <p class="card-text">Age : {{$trainer->age}}</p>
