@@ -48,9 +48,9 @@ class ChallengeSeeder extends Seeder
               
             ],
             [
-                'image' => 'image4.jpg',
-                'judul' => 'Challenge 4',
-                'deskripsi' => 'Deskripsi Challenge 4',
+                'image' => 'https://i.pinimg.com/736x/af/52/19/af521994a4efb8481868c77f78d559d8.jpg',
+                'judul' => 'Biceps',
+                'deskripsi' => 'Barbell Curl melibatkan angkat beban ke arah bahu dengan siku ditekuk, lakukan 3-4 set x 8-12 repetisi. Dumbbell Hammer Curl dengan posisi memegang palu, 3 set x 10-15 repetisi. Preacher Curl di alat preacher bench, 3-4 set x 10-12 repetisi. Concentration Curl dengan fokus pada satu lengan, 3 set x 12-15 repetisi per lengan. Cable Curl menggunakan mesin kabel, 4 set x 10-12 repetisi. Sesuaikan beban dan tingkatkan intensitas seiring waktu untuk hasil yang optimal.',
             ],
             [
                 'image' => 'https://us.123rf.com/450wm/djvstock/djvstock1904/djvstock190403356/124111075-young-man-practicing-outdoor-gym-vector-illustration-design.jpg?ver=6',
