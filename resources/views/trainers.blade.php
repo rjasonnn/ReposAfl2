@@ -26,7 +26,7 @@
     <div class="row">
       <div class="col">
         <a href="trainerdetail/{{$trainer->id}}">
-          <img src="{{$trainer->profile_picture}}"  alt="..." style="width: 100%; max-width: 150px; height: 150px; border-radius: 50%; margin: 0 auto;">
+          <img src="{{$trainer->profile_picture}}"  alt="..." style="width: 100%; max-width: 150px; height: 150px; border-radius: 50%; margin: 0 auto; object-fit:cover">
 
         </a>
       </div>

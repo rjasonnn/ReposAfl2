@@ -20,7 +20,7 @@
             
             min-width: 250px;
             height: 250px;
-            background: url(https://openailabsprodscus.blob.core.windows.net/private/user-ZNEYqYk30hxScGYOdCfF9dgj/generations/generation-vYbvuvJ4Iz1me4L4DDEPussG/image.webp?st=2023-11-10T13%3A07%3A26Z&se=2023-11-10T15%3A05%3A26Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/webp&skoid=15f0b47b-a152-4599-9e98-9cb4a58269f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-11-10T02%3A26%3A41Z&ske=2023-11-17T02%3A26%3A41Z&sks=b&skv=2021-08-06&sig=5oB7cnkWI6yVWoznEH/FFcQLeBebiR2mfp7mz8yTp7w%3D)
+            background: url(https://drive.google.com/uc?export=view&id=1Lvy11Sg89fCHKLm9JHsoEm6dopNiT0nu)
             ; background-size: cover;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
             margin: 2rem;
@@ -46,17 +46,17 @@
                 
             </div>
 
-             <div class="articles rounded-4 imgBox col" style="background: url(https://openailabsprodscus.blob.core.windows.net/private/user-ZNEYqYk30hxScGYOdCfF9dgj/generations/generation-GwQikSn9YWIUVm69Gr9fb36X/image.webp?st=2023-11-10T12%3A40%3A10Z&se=2023-11-10T14%3A38%3A10Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/webp&skoid=15f0b47b-a152-4599-9e98-9cb4a58269f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-11-09T17%3A30%3A10Z&ske=2023-11-16T17%3A30%3A10Z&sks=b&skv=2021-08-06&sig=scZCPKNETan5PYd4O8yqvkmW5ZxLjNuk4v35y5TbuPQ%3D); background-size:cover">
+             <div class="articles rounded-4 imgBox col" style="background: url(https://drive.google.com/uc?export=view&id=1NyBm5A-stK6n2nEIl9OQakHlrVdQKiZJ); background-size:cover">
                 
              </div>
 
            
 
-             <div class="imgBox articles rounded-4 col" style="background:url(https://openailabsprodscus.blob.core.windows.net/private/user-ZNEYqYk30hxScGYOdCfF9dgj/generations/generation-pqshofifLJZ2gyGTvfPEwJL3/image.webp?st=2023-11-10T13%3A17%3A57Z&se=2023-11-10T15%3A15%3A57Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/webp&skoid=15f0b47b-a152-4599-9e98-9cb4a58269f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-11-10T10%3A38%3A45Z&ske=2023-11-17T10%3A38%3A45Z&sks=b&skv=2021-08-06&sig=DPh7wJAM2TroFVmVheSGOwtfBablns6Bs6D6vah663Q%3D); background-size:cover;">
+             <div class="imgBox articles rounded-4 col" style="background:url(https://drive.google.com/uc?export=view&id=1Qh-J4w6mH7YbdnBotwjWjimG5OOWjbk6); background-size:cover;">
 
              </div>
 
-             <div class="imgBox articles rounded-4 col" style="background:url(https://openailabsprodscus.blob.core.windows.net/private/user-ZNEYqYk30hxScGYOdCfF9dgj/prompts/prompt-64XW3uSksH0AIkj8zbMpegEA/image.webp?st=2023-11-10T13%3A17%3A57Z&se=2023-11-10T15%3A15%3A57Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/webp&skoid=15f0b47b-a152-4599-9e98-9cb4a58269f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-11-10T10%3A38%3A45Z&ske=2023-11-17T10%3A38%3A45Z&sks=b&skv=2021-08-06&sig=3OPDGAmwhbV3UDMKwHBXiUWgcrmza0i5l6RP5I4rs34%3D); background-size:cover;">
+             <div class="imgBox articles rounded-4 col" style="background:url(https://drive.google.com/uc?export=view&id=1TVTdJ2BrEWbgklSIpNOU-IuqUyx772IH); background-size:cover;">
 
              </div>
             
@@ -180,7 +180,7 @@
                             </div>
 
 
-                            <h2 style="color: black">{{ $item->name }}</h2>
+                            <h5 class="mt-3" style="color: black">{{ $item->name }}</h2>
 
                             <div class="mini-content">
 

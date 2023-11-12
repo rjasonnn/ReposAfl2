@@ -29,8 +29,7 @@
             <ul>
                 <li><a href="/trainers">Trainers</a></li>
                 <li><a href="/challenges">Challenges</a></li>
-                <li><a href="#articles">Article</a></li>
-                <li><a href="#creativity">Creativity</a></li>
+               
             </ul>
         </nav>
 
