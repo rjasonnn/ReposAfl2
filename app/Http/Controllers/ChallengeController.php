@@ -74,4 +74,10 @@ class ChallengeController extends Controller
             return abort(404);
         }
     }
+
+    public function showAll() {
+        $challenges = Challenge::all();
+        
+        return view('challenges', compact('challenges'));
+    } 
 }

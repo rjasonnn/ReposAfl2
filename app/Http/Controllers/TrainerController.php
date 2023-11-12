@@ -14,10 +14,11 @@ class TrainerController extends Controller
      */
     public function index()
     {
-        $trainers = Trainer::all();
-        $challenges = Challenge::limit(3)->get();
-    
+        $trainers = Trainer::inRandomOrder()->get();
+        $challenges = Challenge::inRandomOrder()->limit(3)->get();    
         return view('home', compact('trainers', 'challenges'));
+
+      
     }
     
 

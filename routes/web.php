@@ -27,6 +27,8 @@ Route::get('/trainerdetail/{id}', [TrainerController::class, 'showById']);
 
 Route::get('/challengedetail/{id}',[ChallengeController::class, 'showById']);
 
+Route::get('/challenges',[ChallengeController::class, 'showAll']);
+
 
 Route::get('/trainers', [TrainerController::class, 'indexAll']);
 

@@ -14,41 +14,48 @@ class TrainerSeeder extends Seeder
     public function run(): void
     {
         Trainer::create([
-            'name' => 'Trainer 1',
+            'name' => 'Daniel White',
             'age' => 30,
-            'bio' => 'Trainer 1 adalah seorang individu yang sangat berpengalaman dan penuh semangat dalam bidangnya. Mereka telah mengumpulkan pengetahuan dan keterampilan yang luas dalam pekerjaan atau disiplin tertentu. Dengan semangat yang tinggi, Trainer 1 mungkin memiliki kemampuan untuk memotivasi dan menginspirasi orang lain untuk mencapai tujuan mereka, baik dalam konteks pelatihan fisik, pelatihan bisnis, atau bidang lainnya.
-
-            Keberpengalamanan dan semangat yang dimiliki oleh Trainer 1 dapat menjadi kombinasi yang kuat untuk membantu orang lain mencapai kesuksesan, memecahkan masalah, atau mencapai prestasi dalam berbagai aspek kehidupan. Mereka mungkin menjadi sumber inspirasi dan pemimpin dalam komunitas atau industri tertentu di mana mereka beroperasi.
-            
-            
-            
-            
-            ',
-            'profile_picture' => 'https://cdn.vectorstock.com/i/1000x1000/93/05/woman-personal-trainer-icon-flat-style-vector-37429305.webp',
+            'bio' => 'Daniel adalah seorang pelatih kebugaran yang berfokus pada kesehatan mental dan fisik. Dengan pendekatan yang berpusat pada keseimbangan, dia menggabungkan latihan kardio, kekuatan, dan meditasi untuk membantu klien meraih kesehatan yang komprehensif. Daniel juga aktif dalam mendukung kesehatan mental di komunitasnya.',
+            'profile_picture' => 'https://drive.google.com/uc?export=view&id=1W7n0izGkMVEbX1UnebF5_g0cws7YA9Ym',
         ]);
 
         // Data Trainer #2
         Trainer::create([
-            'name' => 'Trainer 2',
+            'name' => 'Jake Martinez',
             'age' => 35,
-            'bio' => 'Bio Trainer 2',
-            'profile_picture' => 'https://cdn.vectorstock.com/i/1000x1000/93/07/man-personal-trainer-icon-flat-style-vector-37429307.webp',
+            'bio' => 'Sebagai mantan tentara, Jake membawa disiplin militer ke pelatihan kebugaran. Dia memiliki keahlian dalam latihan khusus berbasis fungsional yang memadukan kekuatan, kelenturan, dan keseimbangan. Jake percaya bahwa konsistensi dan tekad adalah kunci utama untuk meraih hasil yang signifikan.',
+            'profile_picture' => 'https://drive.google.com/uc?export=view&id=1jz6YXhT-rhrMQwWu_sU9na5rCBUPOdfp',
         ]);
 
         // Data Trainer #3
         Trainer::create([
-            'name' => 'Trainer 3',
-            'age' => 28,
-            'bio' => 'Bio Trainer 3',
-            'profile_picture' => 'https://static.vecteezy.com/system/resources/previews/000/151/465/non_2x/vector-muscleman-personal-trainer-illustration.jpg',
+            'name' => 'Dr. Marc Grant',
+            'age' => 40,
+            'bio' => 'Sebagai dokter dan pelatih kebugaran bersertifikasi, Marc memiliki pengetahuan medis yang mendalam tentang tubuh dan latihan. Dia mengintegrasikan pengetahuan kedokteran dengan pelatihan fisik untuk membantu klien dengan tujuan kesehatan yang holistik.',
+            'profile_picture' => 'https://drive.google.com/uc?export=view&id=1AVSOK3it35OcYoh87RK_K3j7NcjPrNpw',
         ]);
 
         // Data Trainer #4
         Trainer::create([
-            'name' => 'Trainer 4',
+            'name' => 'Emily Clarke',
+            'age' => 27,
+            'bio' => 'Seorang ahli yoga dan meditasi, Emily mendalami pendekatan kebugaran yang menggabungkan aspek fisik dan mental. Dia memiliki sertifikasi dalam berbagai disiplin yoga dan telah membantu banyak klien menemukan keseimbangan hidup melalui latihan yoga dan teknik meditasi.',
+            'profile_picture' => 'https://drive.google.com/uc?export=view&id=17L-aWbU_lU51LKJe20I_v9dxmIufMJM-',
+        ]);
+
+        Trainer::create([
+            'name' => 'Sarah Johnson',
             'age' => 32,
-            'bio' => 'Bio Trainer 4',
-            'profile_picture' => 'https://static.vecteezy.com/system/resources/previews/006/994/204/non_2x/a-man-holds-dumbbells-in-his-hands-a-man-does-sports-exercises-for-the-hands-vector.jpg',
+            'bio' => 'Sarah adalah seorang pelatih personal yang berpengalaman dengan fokus pada kebugaran holistik. Dengan latar belakang sebagai atlet profesional, dia memiliki pengetahuan mendalam tentang pelatihan kardio, kekuatan, dan nutrisi. Sarah percaya pada pendekatan yang personal untuk membantu klien mencapai tujuan kebugaran mereka.',
+            'profile_picture' => 'https://drive.google.com/uc?export=view&id=1U9I_e3kYUT28_tKjzZTQafd_nbcwOOXe',
+        ]);
+
+        Trainer::create([
+            'name' => 'Maxwell "Max" Roberts',
+            'age' => 40,
+            'bio' => 'Max adalah seorang pelatih kebugaran yang sangat energik dan motivasional. Dengan latar belakang dalam seni bela diri dan kebugaran militer, dia fokus pada latihan intensitas tinggi, pengembangan kekuatan, dan peningkatan daya tahan. Max dikenal karena motivasinya yang tak kenal lelah.',
+            'profile_picture' => 'https://drive.google.com/uc?export=view&id=12KOHIthCfBTD01vY47h4PT3FqLuWldu5',
         ]);
     }
 }

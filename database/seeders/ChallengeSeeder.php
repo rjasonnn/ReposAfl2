@@ -18,104 +18,59 @@ class ChallengeSeeder extends Seeder
             [
                 'image' => 'https://i.pinimg.com/736x/2d/83/46/2d8346b149638f5ca6141353c72d4ad8.jpg',
                 'judul' => 'Cardio',
-                'deskripsi' => 'As technology continues to evolve, so too does the world of web design. CSS is no exception, with
-                advancements being made all the time to enhance the user experience of websites. In this article, we
-                will explore the latest trends and predictions for the future of CSS and what it means for web
-                developers and designers.',
-                'isi' => '30 Hari Plank Challenge:
-
-                Tujuan: Meningkatkan ketahanan plank dan memperkuat otot perut.
-                Cara Melakukan: Setiap hari, lakukan plank selama waktu yang semakin lama. Mulai dari 20 detik pada hari pertama dan tingkatkan setiap hari hingga mencapai 5 menit.
-                100 Crunches Challenge:
-                
-                Tujuan: Meningkatkan kekuatan otot perut dengan melakukan crunches.
-                Cara Melakukan: Setiap hari, lakukan 100 crunches. Jika Anda tidak bisa langsung mencapai 100, lakukan sebanyak yang Anda bisa dan tingkatkan seiring waktu.
-                Ab Wheel Challenge:
-                
-                Tujuan: Meningkatkan kekuatan otot perut dengan menggunakan roda ab.
-                Cara Melakukan: Lakukan latihan ab wheel setiap hari, mulai dengan beberapa repetisi dan tingkatkan seiring waktu.
-                Leg Raise Challenge:
-                
-                Tujuan: Meningkatkan kekuatan otot perut bawah dengan leg raises.
-                Cara Melakukan: Setiap hari, lakukan leg raises dalam jumlah yang meningkat. Mulai dari 10 repetisi dan tambahkan lebih banyak setiap hari.
-                Russian Twist Challenge:
-                
-                Tujuan: Mengencangkan otot pinggul dan samping perut.
-                Cara Melakukan: Setiap hari, lakukan russian twist dengan beban tambahan atau dumbbell. Tingkatkan jumlah repetisi atau beratannya seiring waktu.',
+                'deskripsi' => 'Skipping selama 1 menit untuk melatih koordinasi dan ketahanan.
+                Lakukan jumping jacks selama 1 menit untuk meningkatkan denyut jantung dan pembakaran kalori.
+                Lari di tempat selama 2 menit untuk melatih kekuatan kaki dan kardiovaskular.
+                Burpees selama 1 menit untuk latihan tubuh secara keseluruhan dan peningkatan kekuatan.
+                Melakukan high knees (lutut tinggi) selama 1 menit untuk meningkatkan kekuatan otot perut dan kardiovaskular.',
+               
             ],
             [
                 'image' => 'https://i.pinimg.com/736x/f4/d1/60/f4d160463a7b3f7d9867a4e146dcfade.jpg',
                 'judul' => 'Abs',
-                'deskripsi' => 'As technology continues to evolve, so too does the world of web design. CSS is no exception, with
-                advancements being made all the time to enhance the user experience of websites. In this article, we
-                will explore the latest trends and predictions for the future of CSS and what it means for web
-                developers and designers.',
-                'isi' => '30 Hari Plank Challenge:
-
-                Tujuan: Meningkatkan ketahanan plank dan memperkuat otot perut.
-                Cara Melakukan: Setiap hari, lakukan plank selama waktu yang semakin lama. Mulai dari 20 detik pada hari pertama dan tingkatkan setiap hari hingga mencapai 5 menit.
-                100 Crunches Challenge:
-                
-                Tujuan: Meningkatkan kekuatan otot perut dengan melakukan crunches.
-                Cara Melakukan: Setiap hari, lakukan 100 crunches. Jika Anda tidak bisa langsung mencapai 100, lakukan sebanyak yang Anda bisa dan tingkatkan seiring waktu.
-                Ab Wheel Challenge:
-                
-                Tujuan: Meningkatkan kekuatan otot perut dengan menggunakan roda ab.
-                Cara Melakukan: Lakukan latihan ab wheel setiap hari, mulai dengan beberapa repetisi dan tingkatkan seiring waktu.
-                Leg Raise Challenge:
-                
-                Tujuan: Meningkatkan kekuatan otot perut bawah dengan leg raises.
-                Cara Melakukan: Setiap hari, lakukan leg raises dalam jumlah yang meningkat. Mulai dari 10 repetisi dan tambahkan lebih banyak setiap hari.
-                Russian Twist Challenge:
-                
-                Tujuan: Mengencangkan otot pinggul dan samping perut.
-                Cara Melakukan: Setiap hari, lakukan russian twist dengan beban tambahan atau dumbbell. Tingkatkan jumlah repetisi atau beratannya seiring waktu.',
+                'deskripsi' => 'Plank selama 1 menit untuk menguatkan otot perut dan inti tubuh.
+                Sit-up selama 1 menit untuk melatih otot rektus abdominis.
+                Russian twists selama 1 menit untuk melatih otot obliques.
+                Leg raises selama 1 menit untuk melatih lower abs.
+                Bicycle crunches selama 1 menit untuk latihan menyeluruh otot perut.
+                Mountain climbers selama 1 menit untuk meningkatkan ketahanan otot perut dan kardiovaskular.',
+              
             ],
             [
                 'image' => 'https://i.pinimg.com/736x/f0/b6/8d/f0b68d1d204ff9cea8461b4ff7ab84ea.jpg',
                 'judul' => 'Legs',
-                'deskripsi' => 'As technology continues to evolve, so too does the world of web design. CSS is no exception, with
-                advancements being made all the time to enhance the user experience of websites. In this article, we
-                will explore the latest trends and predictions for the future of CSS and what it means for web
-                developers and designers.',
-                'isi' => '30 Hari Plank Challenge:
-
-                Tujuan: Meningkatkan ketahanan plank dan memperkuat otot perut.
-                Cara Melakukan: Setiap hari, lakukan plank selama waktu yang semakin lama. Mulai dari 20 detik pada hari pertama dan tingkatkan setiap hari hingga mencapai 5 menit.
-                100 Crunches Challenge:
-                
-                Tujuan: Meningkatkan kekuatan otot perut dengan melakukan crunches.
-                Cara Melakukan: Setiap hari, lakukan 100 crunches. Jika Anda tidak bisa langsung mencapai 100, lakukan sebanyak yang Anda bisa dan tingkatkan seiring waktu.
-                Ab Wheel Challenge:
-                
-                Tujuan: Meningkatkan kekuatan otot perut dengan menggunakan roda ab.
-                Cara Melakukan: Lakukan latihan ab wheel setiap hari, mulai dengan beberapa repetisi dan tingkatkan seiring waktu.
-                Leg Raise Challenge:
-                
-                Tujuan: Meningkatkan kekuatan otot perut bawah dengan leg raises.
-                Cara Melakukan: Setiap hari, lakukan leg raises dalam jumlah yang meningkat. Mulai dari 10 repetisi dan tambahkan lebih banyak setiap hari.
-                Russian Twist Challenge:
-                
-                Tujuan: Mengencangkan otot pinggul dan samping perut.
-                Cara Melakukan: Setiap hari, lakukan russian twist dengan beban tambahan atau dumbbell. Tingkatkan jumlah repetisi atau beratannya seiring waktu.',
+                'deskripsi' => 'Lakukan 20 squats untuk melatih otot paha dan gluteus.
+                Kerjakan 15 lunges per kaki untuk menguatkan otot paha dan otot pantat.
+                Lakukan 20 calf raises untuk melatih otot betis.
+                Lakukan 15 leg curls per kaki untuk melatih otot hamstring.
+                Kerjakan 20 step-ups per kaki dengan kursi atau bangku rendah untuk melatih otot paha dan pantat.
+                Lakukan 15 glute bridges untuk menguatkan otot panggul dan otot pantat.',
+              
             ],
             [
-                'image' => 'image4.jpg',
-                'judul' => 'Challenge 4',
-                'deskripsi' => 'Deskripsi Challenge 4',
-                'isi' => 'Isi Challenge 4',
+                'image' => 'https://i.pinimg.com/736x/af/52/19/af521994a4efb8481868c77f78d559d8.jpg',
+                'judul' => 'Biceps',
+                'deskripsi' => 'Barbell Curl melibatkan angkat beban ke arah bahu dengan siku ditekuk, lakukan 3-4 set x 8-12 repetisi. Dumbbell Hammer Curl dengan posisi memegang palu, 3 set x 10-15 repetisi. Preacher Curl di alat preacher bench, 3-4 set x 10-12 repetisi. Concentration Curl dengan fokus pada satu lengan, 3 set x 12-15 repetisi per lengan. Cable Curl menggunakan mesin kabel, 4 set x 10-12 repetisi. Sesuaikan beban dan tingkatkan intensitas seiring waktu untuk hasil yang optimal.',
             ],
             [
-                'image' => 'image5.jpg',
-                'judul' => 'Challenge 5',
-                'deskripsi' => 'Deskripsi Challenge 5',
-                'isi' => 'Isi Challenge 5',
+                'image' => 'https://us.123rf.com/450wm/djvstock/djvstock1904/djvstock190403356/124111075-young-man-practicing-outdoor-gym-vector-illustration-design.jpg?ver=6',
+                'judul' => 'Triceps',
+                'deskripsi' => 'Lakukan 15 tricep dips dengan kursi atau bangku rendah.
+                Kerjakan 20 tricep push-ups dengan tangan rapat.
+                Lakukan 15 diamond push-ups untuk fokus pada triceps.
+                Lakukan 20 tricep kickbacks dengan berat yang sesuai.
+                Kerjakan 15 overhead tricep extensions dengan dumbbell.
+                Lakukan 20 bench presses dengan barbel dengan fokus pada triceps.',
             ],
             [
-                'image' => 'image6.jpg',
-                'judul' => 'Challenge 6',
-                'deskripsi' => 'Deskripsi Challenge 6',
-                'isi' => 'Isi Challenge 6',
+                'image' => 'https://media.istockphoto.com/id/1456811769/vector/man-doing-push-up-exercise-semi-flat-color-vector-character.jpg?s=612x612&w=0&k=20&c=aHVuKlY9_FQfjwXZlpZ-QUbK4CTWLnCApl7i2ArMJ40=',
+                'judul' => 'Chest',
+                'deskripsi' => 'Lakukan 3 set bench press dengan barbell, masing-masing 15 repetisi.
+                Kerjakan 4 set dumbbell flyes di flat bench, masing-masing 12 repetisi.
+                Lakukan 3 set machine chest press, masing-masing 15 repetisi.
+                Lakukan 4 set cable crossovers di cable machine, masing-masing 12 repetisi.
+                Kerjakan 3 set chest dips, masing-masing 15 repetisi.
+                Lakukan 4 set incline bench press dengan barbell, masing-masing 12 repetisi.',
             ],
         ];
 
